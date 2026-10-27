@@ -28,6 +28,15 @@
     @media(max-width:850px){.hero{grid-template-columns:1fr 1fr;gap:27px;min-height:530px}.hero-photo{height:370px}.gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:160px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(6n+4){grid-column:span 1}.stay{gap:17px}.stay-copy .title{font-size:35px}}
     @media(max-width:650px){.wrap{width:min(100% - 30px,1160px)}.topbar{height:63px}.toplabel{font-size:9px}.hero{display:flex;flex-direction:column;align-items:stretch;padding:35px 0 60px;gap:35px}.hero-photo{height:320px}.hero-art{margin:0 8px 0 0}.hero-sticker{right:-8px;width:83px;height:83px;font-size:10px}.hero-sticker span{font-size:22px}.hero-caption{left:-5px;bottom:10px}.tape{margin-bottom:55px}.section{padding-bottom:65px}.section-heading,.gallery-head{align-items:start;flex-direction:column}.route{grid-template-columns:1fr}.route-card{min-height:170px}.route-icon{margin:11px 0}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:145px;gap:8px}.gallery-item:first-child{grid-row:span 2}.gallery-item:nth-child(6n+4){grid-column:span 2}.stay{grid-template-columns:1fr}.stay-copy{padding:0}.money{padding:23px}.call{padding:27px;align-items:flex-start;flex-direction:column;margin-bottom:55px}.call:after{right:0}.footer{flex-direction:column}.lightbox{height:75vh}.modal{padding:12px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    /* Recortes oficiales de Uma Musume sobre la propuesta visual */
+    .hero-uma{position:absolute;z-index:2;right:-18px;bottom:4px;height:72%;max-width:43%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 10px 12px #17172255);pointer-events:none;animation:umaFloat 3.4s ease-in-out infinite}
+    .gallery-item>img:first-child{position:relative;z-index:0}
+    .gallery-item .uma-cutout{position:absolute;z-index:1;right:0;bottom:-9%;width:37%;height:76%;object-fit:contain;object-position:bottom right;filter:drop-shadow(0 5px 7px #17172255);pointer-events:none;animation:umaFloat 3.4s ease-in-out infinite}
+    .gallery-item:nth-child(3n) .uma-cutout{left:0;right:auto;object-position:bottom left;animation-delay:-1.2s}
+    .gallery-item:nth-child(4n) .uma-cutout{width:30%;height:68%;animation-delay:-2s}
+    .gallery-item:first-child .uma-cutout{width:25%;height:42%}
+    @keyframes umaFloat{0%,100%{translate:0 0}50%{translate:0 -5px}}
+    @media(max-width:650px){.hero-uma{right:-7px;height:65%;max-width:40%}.gallery-item .uma-cutout{width:40%;height:72%}}
   </style>
 </head>
 <body>
@@ -42,7 +51,7 @@
         <div class="buttons"><a class="btn btn-primary" href="#plan">Ver la propuesta <span>↓</span></a><a class="btn btn-dark" href="https://www.airbnb.mx/rooms/1187360001647900843?adults=14&amp;check_in=2026-11-29&amp;check_out=2026-11-30&amp;guests=14" target="_blank" rel="noopener">Ver casa en Airbnb ↗</a><a class="btn btn-plain" href="https://wa.me/523324393525?text=%C2%A1Hola%21%20Vi%20el%20plan%20Uma%20Musume%20en%20Guadalajara%20y%20me%20interesa%20sumarme.%20%C2%BFMe%20compartes%20m%C3%A1s%20detalles%3F" target="_blank" rel="noopener">Me interesa · WhatsApp ↗</a></div>
         <p class="micro">Fechas del enlace de Airbnb: 29–30 nov. 2026. Hay que confirmar que coincidan con la fecha del evento antes de reservar.</p>
       </div>
-      <div class="hero-art"><div class="hero-sticker"><div><span>✦</span>¡A la<br>meta!</div></div><img class="hero-photo" src="https://a0.muscache.com/im/pictures/miso/Hosting-1187360001647900843/original/e37ca6bf-8618-413c-9c25-b5edb31c3d9b.jpeg?im_w=1200" alt="Sala y comedor de la casa en Zapopan"><div class="photo-frame"></div><div class="hero-caption">Nuestro punto de descanso<small>Zapopan · hasta 14 personas</small></div></div>
+      <div class="hero-art"><div class="hero-sticker"><div><span>✦</span>¡A la<br>meta!</div></div><img class="hero-photo" src="https://a0.muscache.com/im/pictures/miso/Hosting-1187360001647900843/original/e37ca6bf-8618-413c-9c25-b5edb31c3d9b.jpeg?im_w=1200" alt="Sala y comedor de la casa en Zapopan"><img class="hero-uma" src="https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e529e8ff6a1746fa8a3af030c65f0cc4/specialweek_02_2.png" alt="Special Week, ilustración oficial de Uma Musume" fetchpriority="high"><div class="photo-frame"></div><div class="hero-caption">Nuestro punto de descanso<small>Zapopan · hasta 14 personas</small></div></div>
     </section>
     <div class="tape" aria-hidden="true"><div class="tape-line"><span>RUN TOGETHER ✦ UMAMUSUME FAN DAY ✦ GUADALAJARA ✦ PARQUE METROPOLITANO ✦ CANTAMOS A TODO CORAZÓN (Y CON VOLUMEN RAZONABLE) ✦ </span><span>RUN TOGETHER ✦ UMAMUSUME FAN DAY ✦ GUADALAJARA ✦ PARQUE METROPOLITANO ✦ CANTAMOS A TODO CORAZÓN (Y CON VOLUMEN RAZONABLE) ✦ </span></div></div>
     <section class="wrap section" id="plan">
@@ -64,7 +73,7 @@
     </section>
     <section class="wrap call"><div><div class="overline">¿Quién se apunta al equipo?</div><h2>Evento + parque + canciones de Uma Musume. ¿Le entran?</h2><p>Confirmen quiénes se sumarían y ajustamos el plan juntos. El alojamiento es una propuesta, todavía no una reserva.</p></div><a class="btn btn-primary" href="https://wa.me/523324393525?text=%C2%A1Hola%21%20Vi%20el%20plan%20Uma%20Musume%20en%20Guadalajara%20y%20me%20interesa%20sumarme.%20%C2%BFMe%20compartes%20m%C3%A1s%20detalles%3F" target="_blank" rel="noopener">Me interesa · WhatsApp ↗</a></section>
   </main>
-  <footer class="wrap footer"><span>Una propuesta entre amigos y fans · Guadalajara / Zapopan</span><span>Uma Musume es una referencia fan; esta página no es oficial. Fotos, datos y precio del alojamiento: <a href="https://www.airbnb.mx/rooms/1187360001647900843?adults=14&amp;check_in=2026-11-29&amp;check_out=2026-11-30&amp;guests=14" target="_blank" rel="noopener">publicación en Airbnb</a>. Precio sujeto a cambios.</span></footer>
+  <footer class="wrap footer"><span>Una propuesta entre amigos y fans · Guadalajara / Zapopan</span><span>Uma Musume es una referencia fan; esta página no es oficial. Ilustraciones enlazadas desde el <a href="https://umamusume.jp/character" target="_blank" rel="noopener">portal oficial de personajes de Cygames</a>. Fotos, datos y precio del alojamiento: <a href="https://www.airbnb.mx/rooms/1187360001647900843?adults=14&amp;check_in=2026-11-29&amp;check_out=2026-11-30&amp;guests=14" target="_blank" rel="noopener">publicación en Airbnb</a>. Precio sujeto a cambios.</span></footer>
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Visor de fotos"><div class="lightbox"><div class="modal-top"><span id="modalCount">FOTO 1 / 13</span><div class="modal-controls"><button class="icon-btn" id="prev" aria-label="Foto anterior">‹</button><button class="icon-btn" id="next" aria-label="Foto siguiente">›</button><button class="icon-btn" id="close" aria-label="Cerrar visor">×</button></div></div><div class="modal-img-wrap"><img class="modal-img" id="modalImg" alt="Foto ampliada del alojamiento"></div><div class="modal-bottom"><span id="modalLabel">Casa en Zapopan</span><span class="hint">Usa ← → para cambiar · Esc para cerrar</span></div></div></div>
   <div class="toast" id="toast" role="status" aria-live="polite">¡Invitación copiada! ✦</div>
   <script>
@@ -83,9 +92,23 @@
       ['hosting','df8ac7a2-9787-4ee8-b91b-fdc7b9c00e85','Foto adicional'],
       ['hosting','6453cd48-b387-4e4c-9a0e-02ad21cad360','Foto adicional']
     ].map(([folder,id,label])=>({src:`https://a0.muscache.com/im/pictures/${folder}/Hosting-1187360001647900843/original/${id}.jpeg?im_w=1200`,thumb:`https://a0.muscache.com/im/pictures/${folder}/Hosting-1187360001647900843/original/${id}.jpeg?im_w=720`,label}));
+    // Ilustraciones PNG tomadas del portal oficial; cada foto de la casa recibe una Uma distinta.
+    const umamusume=[
+      {name:'Special Week',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/e529e8ff6a1746fa8a3af030c65f0cc4/specialweek_02_2.png'},
+      {name:'Gold Ship',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a3e95391f9f84d539da524afd78264f0/goldship_02.png'},
+      {name:'Silence Suzuka',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/7296e365fcfe47709048d7152f5020cb/silencesuzuka_02.png'},
+      {name:'Rice Shower',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/a34a77e550084f55ae886b12386d97aa/riceshower_02.png'},
+      {name:'Mejiro McQueen',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d7e165c2452344e7ac47467513fd53ba/mejiromcqueen_02.png'},
+      {name:'Kitasan Black',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/8df216d476cb4ccfb67b6d47cb85167f/kitasanblack_02.png'},
+      {name:'Oguri Cap',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/82b20a3edaaf424c8aece70590a9d7e2/oguricap_02.png'},
+      {name:'Haru Urara',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/bc1b957fb0a9407fb2c65dd570162ab7/haruurara_02.png'},
+      {name:'Daiwa Scarlet',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/df4d1573b9d14810bef6a2325d6bc28b/daiwascarlet_02.png'},
+      {name:'Vodka',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/d1fda143d78c4c9d8eaddb52d0ba1b29/vodka_02.png'},
+      {name:'Gold City',src:'https://images.microcms-assets.io/assets/973fc097984b400db8729642ddff5938/1bae5ffdcaa74555a196c6c4850816c5/goldcity_02.png'}
+    ];
     const gallery=document.getElementById('gallery'), modal=document.getElementById('modal'), modalImg=document.getElementById('modalImg'), modalCount=document.getElementById('modalCount'), modalLabel=document.getElementById('modalLabel');
     let current=0;
-    photos.forEach((p,i)=>{const b=document.createElement('button');b.className='gallery-item';b.setAttribute('aria-label',`Ampliar foto ${i+1}: ${p.label}`);b.innerHTML=`<img src="${p.thumb}" alt="${p.label} de la casa en Zapopan" loading="lazy"><span class="gallery-caption">${String(i+1).padStart(2,'0')} / ${p.label}</span>`;b.addEventListener('click',()=>openPhoto(i));gallery.appendChild(b)});
+    photos.forEach((p,i)=>{const b=document.createElement('button');b.className='gallery-item';b.setAttribute('aria-label',`Ampliar foto ${i+1}: ${p.label}`);const uma=umamusume[i%umamusume.length];b.innerHTML=`<img src="${p.thumb}" alt="${p.label} de la casa en Zapopan" loading="lazy"><img class="uma-cutout" src="${uma.src}" alt="" aria-hidden="true" loading="lazy"><span class="gallery-caption">${String(i+1).padStart(2,'0')} / ${p.label}</span>`;b.addEventListener('click',()=>openPhoto(i));gallery.appendChild(b)});
     document.getElementById('photoTotal').textContent=`${photos.length} FOTOS`;
     function openPhoto(i){current=(i+photos.length)%photos.length;const p=photos[current];modalImg.src=p.src;modalImg.alt=p.label+' de la casa en Zapopan';modalCount.textContent=`FOTO ${current+1} / ${photos.length}`;modalLabel.textContent=p.label;modal.classList.add('open');document.body.style.overflow='hidden';document.getElementById('close').focus()}
     function closePhoto(){modal.classList.remove('open');document.body.style.overflow=''}function movePhoto(d){openPhoto(current+d)}
